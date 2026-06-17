@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Analista de Datos Junior</title>
+    <style>
+        /* Estilos generales */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Cabecera / Hero Section */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            border-bottom: 5px solid var(--secondary-color);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header h2 {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #bdc3c7;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Secciones */
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--secondary-color);
+            display: inline-block;
+            padding-bottom: 0.3rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        /* Habilidades */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--secondary-color);
+        }
+
+        .skill-card ul {
+            list-style-position: inside;
+            margin-top: 1rem;
+        }
+
+        .skill-card li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Proyectos */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-tags {
+            margin-top: 1rem;
+        }
+
+        .tag {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+            display: inline-block;
+        }
+
+        /* Contacto y Pie de página */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .social-links a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Marco Imouokhome</h1>
+        <h2>Analista de Datos Junior | Desarrollador Web y Multiplataforma</h2>
+    </header>
+
+    <div class="container">
+        
+        <section id="sobre-mi">
+            <h3>Sobre mí</h3>
+            <p>
+                Soy un profesional apasionado por extraer valor de los datos y transformarlos en soluciones tecnológicas reales. Como Analista de Datos Junior, me especializo en la limpieza, análisis y visualización de información para la toma de decisiones. 
+            </p>
+            <p>
+                Además, cuento con conocimientos sólidos en el desarrollo de aplicaciones web y multiplataforma, lo que me permite no solo analizar los datos, sino también crear las interfaces, APIs o dashboards interactivos donde esos datos cobran vida para el usuario final.
+            </p>
+        </section>
+
+        <section id="habilidades">
+            <h3>Habilidades Técnicas</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4 style="color: var(--primary-color);">📊 Análisis de Datos</h4>
+                    <ul>
+                        <li><strong>Lenguajes:</strong> Python (Pandas, NumPy), R</li>
+                        <li><strong>Bases de Datos:</strong> SQL (MySQL, PostgreSQL)</li>
+                        <li><strong>Visualización:</strong> Power BI, Tableau, Matplotlib</li>
+                        <li><strong>Otros:</strong> Excel Avanzado, Estadística Descriptiva</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h4 style="color: var(--primary-color);">💻 Desarrollo de Software</h4>
+                    <ul>
+                        <li><strong>Web Front-end:</strong> HTML5, CSS3, JavaScript (React / Vue)</li>
+                        <li><strong>Web Back-end:</strong> Python (Django / Flask), Node.js</li>
+                        <li><strong>Multiplataforma:</strong> Flutter / React Native, Java</li>
+                        <li><strong>Herramientas:</strong> Git, GitHub, APIs REST</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <h3>Proyectos Destacados</h3>
+            <div class="projects-grid">
+                <a href="https://github.com/Bootcamp-DA-P2/DA-Project-Regression-Grupo2.git" style="text-decoration: none; color: inherit;">
+                    <div class="project-card">
+                        <h4>Modelo de Regresión para Análisis de Futbol</h4>
+                        <p>Modelo de regresión lineal para predecir valor de mercado de los jugadores.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">StreamLit</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Bootcamp-DA-P2/automatizaci-n-mysql-python-excel_grupo3.git" style="text-decoration: none; color: inherit;">
+                    <div class="project-card">
+                        <h4>Sistema de Automatización y Análisis de Datos.</h4>
+                        <p>Proyecto de automatización de datos orientado al análisis, transformación y visualización de información mediante procesos ETL desarrollados en Python. </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Pandas</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/Bootcamp-DA-P2/Dashboard_PowerBI_Grupo6.git" style="text-decoration: none; color: inherit;">
+                    <div class="project-card">
+                        
+                        <h4>Dashboard Web Interactivo</h4>
+                        <p>Aplicación web que consume una API pública de clima, procesa los datos en el backend y los muestra en gráficos interactivos en el frontend.</p>
+                        <div class="project-tags">
+                            <span class="tag">Power BI</span>
+                            <span class="tag">Power Query</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>¿Interesado en mi perfil? ¡Hablemos!</p>
+        <div class="social-links" style="margin-top: 1rem;">
+            <a href="mailto:tuemail@ejemplo.com">Email</a>
+            <a href="https://linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a>
+            <a href="https://github.com/tu-usuario" target="_blank">GitHub</a>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.8rem; color: #bdc3c7;">&copy; 2026 [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
